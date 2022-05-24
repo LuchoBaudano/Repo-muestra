@@ -1,0 +1,85 @@
+
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.BodyIndex{
+   background-color: burlywood;
+   background-image: url(../assets/sandwich-baguette-drawing.png);
+   background-repeat: no-repeat;
+   background-size: 500px;  
+   background-position-x: center;
+   background-position-y: 290px;
+
+}
+/*Header en comun*/
+.Titulo{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    border-top: solid gray 3px;
+    border-bottom: solid gray 3px;
+}
+/*Menu en comun*/
+.Menu{
+    text-align:left;
+    list-style-type: none;
+}
+.Menu li{
+    display: inline;
+    margin-right: 7px;
+    margin-left: 0%;
+    
+}
+.Menu a{
+    color: whitesmoke;
+    
+  padding: 0 4px;
+  text-decoration: none;
+}
+.Frase{
+    text-align: center;
+    padding-top: 70px
+}
+.Frase__Autentica{
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    font-size: 40px;
+    text-decoration: underline ;
+}
+/*Footer en comun*/
+.Informacion{
+    width: 70px;
+    height: 70px;
+    display: inline;   
+}
+.Insta{
+    max-width: 75px;
+    max-height: 75px;
+    padding-top: 473px;
+}
+.Facebook{
+    max-width: 70px;
+    max-height: 70px;
+    align-items: 403px ;
+
+}
+/*Inicio del sobre mi*/
+.Text{
+    text-align: center;
+    padding-top: 70px;
+}
+.Text__1{
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    font-size: 40px;
+}
+/*Inicio de servicios*/
+.Text__2{
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    font-size: 40px;
+}
