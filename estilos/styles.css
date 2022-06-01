@@ -43,12 +43,14 @@ box-sizing: border-box;
 .Frase{
     text-align: center;
     padding-top: 70px
+    
 }
 .Frase__Autentica{
     font-family: 'Times New Roman', Times, serif;
     color: whitesmoke;
     font-size: 40px;
     text-decoration: underline ;
+
 }
 /*Footer en comun*/
 .Informacion{
@@ -59,7 +61,7 @@ box-sizing: border-box;
 .Insta{
     max-width: 75px;
     max-height: 75px;
-    padding-top: 473px;
+    padding-top: 25px;
 }
 .Facebook{
     max-width: 70px;
@@ -82,4 +84,70 @@ box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
     color: whitesmoke;
     font-size: 40px;
+}
+.Horarios{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.Frase{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.1fr 1fr;
+    grid-template-areas: "Frase Frase" "Horario MenuComida";
+}
+.Frase__Autentica{
+    grid-area: Frase;
+    border-bottom: solid white 4px;
+    margin: 0px;
+}
+.Horarios{
+    grid-area: Horario;
+    border-right: solid white 4px;
+    border-bottom: solid white 4px;
+
+}
+.ComidaDia{
+    grid-area: MenuComida;
+    color: white;
+    border-bottom: solid white 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.Horarios table{
+    margin: 10px;
+}
+/*Inicio media queries*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .Frase{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "Frase" "Horario" "MenuComida";
+    }
+    
+}
+.ImgPasteleria{
+    display: grid;
+    grid-template-rows: 100px; 100px
+    grid-template-columns: 100px; 
+    grid-gap: 5px;
+  }
+    
+.ImgP{
+    
+    text-align: center;
+    border: white 5px solid;
+    grid-column-start: 1; 
+    grid-column-end: 5; <
+    grid-row-start: 1; 
+    grid-row-end: 3;
+    
+    
+}
+li:hover{
+    background-color: gray
 }
