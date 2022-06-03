@@ -1,27 +1,20 @@
 
-}
+
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
 .BodyIndex{
-   background-color: burlywood;
-   background-image: url(../assets/sandwich-baguette-drawing.png);
-   background-repeat: no-repeat;
-   background-size: 500px;  
-   background-position-x: center;
-   background-position-y: 290px;
-
+   background-color: #deb887;
 }
 /*Header en comun*/
 .Titulo{
     text-align: center;
-    color: whitesmoke;
+    color:whitesmoke;
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
-    border-top: solid gray 3px;
-    border-bottom: solid gray 3px;
+
 }
 /*Menu en comun*/
 .Menu{
@@ -45,12 +38,19 @@ box-sizing: border-box;
     padding-top: 70px
     
 }
-.Frase__Autentica{
+.Frase__Autentica h2{
     font-family: 'Times New Roman', Times, serif;
     color: whitesmoke;
     font-size: 40px;
     text-decoration: underline ;
 
+}
+.Frase__Autentica p{
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-top: 65px;
+    margin-bottom: 65px;
 }
 /*Footer en comun*/
 .Informacion{
@@ -59,15 +59,15 @@ box-sizing: border-box;
     display: inline;   
 }
 .Insta{
-    max-width: 75px;
-    max-height: 75px;
+    width: 50px;
+    height: 75px;
     padding-top: 25px;
 }
 .Facebook{
-    max-width: 70px;
-    max-height: 70px;
+    width: 50px;
+    height: 70px;
     align-items: 403px ;
-
+    padding-top: 25px;
 }
 /*Inicio del sobre mi*/
 .Text{
@@ -77,7 +77,7 @@ box-sizing: border-box;
 .Text__1{
     font-family: 'Times New Roman', Times, serif;
     color: whitesmoke;
-    font-size: 40px;
+    font-size: 39px;
 }
 /*Inicio de servicios*/
 .Text__2{
@@ -105,6 +105,10 @@ box-sizing: border-box;
     grid-area: Horario;
     border-right: solid white 4px;
     border-bottom: solid white 4px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
 
 }
 .ComidaDia{
@@ -137,17 +141,40 @@ box-sizing: border-box;
     grid-gap: 5px;
   }
     
-.ImgP{
-    
+.ImgP{   
     text-align: center;
     border: white 5px solid;
     grid-column-start: 1; 
     grid-column-end: 5; <
     grid-row-start: 1; 
-    grid-row-end: 3;
-    
-    
+    grid-row-end: 3;   
 }
-li:hover{
-    background-color: gray
+
+header{
+    background: rgb(222,184,135);
+    background: linear-gradient(0deg, rgba(222,184,135,1) 11%, rgba(172,142,105,1) 52%, rgba(111,92,68,1) 74%, rgba(46,38,28,1) 88%, rgba(0,0,0,1) 100%);
+}
+.nav-link{
+    color:white;
+}
+body{
+    display: grid;
+    grid-template-rows: 1fr auto 80px;
+    grid-template-columns: auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.Formulario{
+    display: flex;
+    flex-direction: column;
 }
