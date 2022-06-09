@@ -1,5 +1,4 @@
 
-
 *{
 margin: 0;
 padding: 0;
@@ -14,7 +13,6 @@ box-sizing: border-box;
     color:whitesmoke;
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
-
 }
 /*Menu en comun*/
 .Menu{
@@ -127,6 +125,7 @@ box-sizing: border-box;
 }
 /*Inicio media queries*/
 @media screen and (min-width: 320px) and (max-width: 480px) {
+   
     .Frase{
         display: grid;
         grid-template-columns: auto;
@@ -137,7 +136,7 @@ box-sizing: border-box;
 }
 .ImgPasteleria{
     display: grid;
-    grid-template-rows: 100px; 100px
+    grid-template-rows: 100px 100px;
     grid-template-columns: 100px; 
     grid-gap: 5px;
   }
@@ -146,7 +145,7 @@ box-sizing: border-box;
     text-align: center;
     border: white 5px solid;
     grid-column-start: 1; 
-    grid-column-end: 5; <
+    grid-column-end: 5; 
     grid-row-start: 1; 
     grid-row-end: 3;   
 }
@@ -181,5 +180,4 @@ footer{
     flex-direction: column;
     align-items: center;
     margin-top: 120px
-
 }

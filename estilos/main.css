@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Header en comun*/
+.Titulo {
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px; }
+
+/*Menu en comun*/
+.Menu {
+  text-align: left;
+  list-style-type: none; }
+
+.Menu li {
+  display: inline;
+  margin-right: 7px;
+  margin-left: 0%; }
+
+.Menu a {
+  color: whitesmoke;
+  padding: 0 4px;
+  text-decoration: none; }
+
+header {
+  background: burlywood;
+  background: linear-gradient(0deg, burlywood 11%, #ac8e69 52%, #6f5c44 74%, #2e261c 88%, black 100%); }
+
+header {
+  grid-area: header; }
+
+.Informacion {
+  width: 100%;
+  height: 70px;
+  display: inline; }
+
+.Insta {
+  width: 50px;
+  height: 75px;
+  padding-top: 25px; }
+
+.Facebook {
+  width: 50px;
+  height: 70px;
+  align-items: 403px;
+  padding-top: 25px; }
+
+footer {
+  grid-area: footer; }
+
+.Frase {
+  text-align: center;
+  padding-top: 70px; }
+
+.Frase__Autentica h2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  font-size: 40px;
+  text-decoration: underline; }
+
+.Frase__Autentica p {
+  color: whitesmoke;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  margin-top: 65px;
+  margin-bottom: 65px; }
+
+.Horarios {
+  color: white;
+  display: flex;
+  flex-direction: column; }
+
+.Frase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.1fr 1fr;
+  grid-template-areas: "Frase Frase" "Horario MenuComida"; }
+
+.Frase__Autentica {
+  grid-area: Frase;
+  border-bottom: solid white 4px;
+  margin: 0px; }
+
+.Horarios {
+  grid-area: Horario;
+  border-right: solid white 4px;
+  border-bottom: solid white 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.ComidaDia {
+  grid-area: MenuComida;
+  color: white;
+  border-bottom: solid white 4px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.Horarios table {
+  margin: 10px; }
+
+.BodyIndex {
+  background-color: #deb887; }
+
+.Text {
+  text-align: center;
+  padding-top: 70px; }
+
+.Text__1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  font-size: 39px; }
+
+.Formulario {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.Text {
+  text-align: center;
+  padding-top: 70px; }
+
+.Text__1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  font-size: 39px; }
+
+.ImgPasteleria {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  grid-template-areas: "ImgP ImgP";
+  grid-gap: 5px; }
+
+.ImgP {
+  grid-area: ImgP;
+  text-align: center;
+  border: white 5px solid;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3; }
+
+.Text__2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  font-size: 40px; }
+
+/*Inicio media queries*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .Frase {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "Frase" "Horario" "MenuComida"; } }

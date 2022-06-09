@@ -1,0 +1,32 @@
+/*Header en comun*/
+.Titulo{
+    text-align: center;
+    color:whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+/*Menu en comun*/
+.Menu{
+    text-align:left;
+    list-style-type: none;
+}
+.Menu li{
+    display: inline;
+    margin-right: 7px;
+    margin-left: 0%;
+    
+}
+.Menu a{
+    color: whitesmoke;
+    
+  padding: 0 4px;
+  text-decoration: none;
+}
+
+header{
+    background: rgb(222,184,135);
+    background: linear-gradient(0deg, rgba(222,184,135,1) 11%, rgba(172,142,105,1) 52%, rgba(111,92,68,1) 74%, rgba(46,38,28,1) 88%, rgba(0,0,0,1) 100%);
+}
+header{
+    grid-area: header;
+}

@@ -1,0 +1,16 @@
+.ImgPasteleria{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto; 
+    grid-template-areas: "ImgP ImgP";
+    grid-gap: 5px;
+  }
+.ImgP{
+  grid-area: ImgP;   
+    text-align: center;
+    border: white 5px solid;
+    grid-column-start: 1; 
+    grid-column-end: 5; 
+    grid-row-start: 1; 
+    grid-row-end: 3;   
+}
