@@ -1,6 +1,10 @@
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+    
+}
 .Informacion{
-    width: 100%;
-    height: 70px;
+    @include sizes(70px, 100%);
     display: inline;
       
 }

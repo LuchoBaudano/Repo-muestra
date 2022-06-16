@@ -3,11 +3,16 @@
     padding-top: 70px
     
 }
+$Fautentic: (
+    colorF:whitesmoke,
+    sizeF: 40px,
+    decoration: underline,
+);
 .Frase__Autentica h2{
     font-family: 'Times New Roman', Times, serif;
-    color: whitesmoke;
-    font-size: 40px;
-    text-decoration: underline ;
+    color: map-get($Fautentic, colorF);
+    font-size: map-get($Fautentic, sizeF);
+    text-decoration: map-get($Fautentic, decoration) ;
 
 }
 .Frase__Autentica p{

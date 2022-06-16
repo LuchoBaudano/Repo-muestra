@@ -134,6 +134,7 @@ box-sizing: border-box;
     }
     
 }
+
 .ImgPasteleria{
     display: grid;
     grid-template-rows: 100px 100px;
