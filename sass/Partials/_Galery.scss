@@ -1,12 +1,14 @@
-.ImgPasteleria{
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto; 
-    grid-template-areas: "ImgP ImgP";
-    grid-gap: 5px;
-  }
+.Img1{
+  object-fit: contain;
+  height: 680px;
+  width: max-content;
+}
+.carousel-inner{
+  display: flex;
+  align-items: center;
+}
 .ImgP{
-  grid-area: ImgP;   
+    grid-area: ImgP;   
     text-align: center;
     border: white 5px solid;
     grid-column-start: 1; 

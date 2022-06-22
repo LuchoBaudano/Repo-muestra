@@ -132,12 +132,14 @@ footer {
   color: whitesmoke;
   font-size: 39px; }
 
-.ImgPasteleria {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto;
-  grid-template-areas: "ImgP ImgP";
-  grid-gap: 5px; }
+.Img1 {
+  object-fit: contain;
+  height: 680px;
+  width: max-content; }
+
+.carousel-inner {
+  display: flex;
+  align-items: center; }
 
 .ImgP {
   grid-area: ImgP;
