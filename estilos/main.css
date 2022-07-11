@@ -32,24 +32,13 @@ header {
 header {
   grid-area: header; }
 
-.Informacion {
-  height: 100%;
-  width: 70px;
-  display: inline; }
-
-.Insta {
-  width: 50px;
-  height: 75px;
-  padding-top: 25px; }
-
-.Facebook {
-  width: 50px;
-  height: 70px;
-  align-items: 403px;
-  padding-top: 25px; }
-
-footer {
-  grid-area: footer; }
+.footerMenu {
+  text-align: center;
+  color: white;
+  padding: 10px; }
+  .footerMenu a {
+    color: white;
+    text-decoration: none; }
 
 .Frase {
   text-align: center;
@@ -108,21 +97,54 @@ footer {
 .BodyIndex {
   background-color: #deb887; }
 
+.Text__Img {
+  width: 100%;
+  display: flex;
+  height: 100%; }
+
 .Text {
-  text-align: center;
   padding-top: 70px; }
+
+.Text__Position {
+  text-align: center;
+  position: absolute; }
+
+.Text__Caja {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .Text__1 {
   font-family: 'Times New Roman', Times, serif;
   color: whitesmoke;
-  font-size: 39px; }
+  font-size: 39px;
+  text-align: center; }
 
-.Formulario {
+.h2Contact {
   color: white;
+  padding: 10px;
+  padding-bottom: 0px; }
+
+.contactForm {
+  color: white;
+  padding: 10px 10px 10px 20px; }
+
+.colorformname {
+  background-color: wheat; }
+
+.colorforminput {
+  background-color: #f5f1ea; }
+
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
+.hrcontact {
+  width: 300px; }
+
 .Text {
   text-align: center;
   padding-top: 70px; }
@@ -131,6 +153,9 @@ footer {
   font-family: 'Times New Roman', Times, serif;
   color: whitesmoke;
   font-size: 39px; }
+
+.Tucson {
+  width: 700px; }
 
 .Img1 {
   object-fit: contain;
@@ -161,4 +186,6 @@ footer {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "Frase" "Horario" "MenuComida"; } }
+    grid-template-areas: "Frase" "Horario" "MenuComida"; }
+  .Text__1 {
+    font-size: 12px; } }

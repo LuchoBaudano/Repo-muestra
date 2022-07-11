@@ -1,8 +1,25 @@
-.Formulario{
+.h2Contact{
     color: white;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.contactForm{
+    color: white;
+    padding: 10px 10px 10px 20px;
+}
+.colorformname{
+    background-color: wheat;
+}
+.colorforminput{
+    background-color: rgb(245, 241, 234);
+}
+.contact{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.hrcontact{
+    width: 300px;
 }
 .Text{
     text-align: center;
@@ -12,4 +29,7 @@
     font-family: 'Times New Roman', Times, serif;
     color: whitesmoke;
     font-size: 39px;
+}
+.Tucson{
+    width: 700px;
 }

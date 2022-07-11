@@ -1,9 +1,26 @@
+.Text__Img{
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
 .Text{
+    padding-top: 70px; 
+}
+.Text__Position{
     text-align: center;
-    padding-top: 70px;
+    position: absolute;
+}
+.Text__Caja{
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
 }
 .Text__1{
     font-family: 'Times New Roman', Times, serif;
     color: whitesmoke;
     font-size: 39px;
+    text-align: center;
 }
+
